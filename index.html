@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />
+  <title>Examples of Rating widget</title>
+  <link rel="stylesheet" type="text/css" href="css/rating.css" />
+
+  <style type="text/css">
+      .column1 {
+          width:300px;
+      }
+  </style>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="rating.js"></script>
+  <script type="text/javascript" src="demo.js"></script>
+</head>
+
+<body>
+
+<h1>Rating Samples</h1>
+<p>
+  To test the rating component, run your mouse over and click the images.
+</p>
+        
+<table border="1" cellpadding="5" cellspacing="5">
+  <tr>
+    <th>Component configuration</th>
+    <th>Rating</th>
+    <th>Actual Average Grade</th>
+    <th># Not Interested</th>
+  </tr>
+
+  <tr>
+    <td class="column1">
+       Includes clear and notInterested images, but not toggle image
+    </td>
+    <td>
+      <span id="rating1Holder">
+      </span>
+    </td>
+    <td>
+        <span id="avgtext1">0.0</span>
+    </td>
+    <td>
+        <span id="notinttext1">0</span>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="column1">
+      Includes clear, notInterested, and toggle images.  Initially renders in average mode with average grade of 2.5.  Acknowledgements appear in text area when clicking on images.
+    </td>
+    <td>
+      <span id="rating2Holder">
+      </span>
+    </td>
+    <td>
+        <span id="avgtext2">0.0</span>
+    </td>
+    <td>
+        <span id="notinttext2">0</span>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="column1">
+      Does not include clear, notInterested, or toggle images.
+    </td>
+    <td>
+      <span id="rating3Holder">
+      </span>
+    </td>
+    <td>
+        <span id="avgtext3">0.0</span>
+    </td>
+    <td>
+        <span id="notinttext3">0</span>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="column1">
+      Does not include clear, notInterested, toggle images, or text area
+    </td>
+    <td>
+      <span id="rating4Holder">
+      </span>
+    </td>
+    <td>
+        <span id="avgtext4">0.0</span>
+    </td>
+    <td>
+        <span id="notinttext4">0</span>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="column1">
+      Includes clear, notInterested, and toggle images.  Initially renders in normal mode with not interested grade.
+    </td>
+    <td>
+      <span id="rating5Holder">
+      </span>
+    </td>
+    <td>
+        <span id="avgtext5">0.0</span>
+    </td>
+    <td>
+        <span id="notinttext5">0</span>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="column1">
+      Includes clear and notInterested images, but not toggle image.  Initial grade set to 3, maxGrade set to 4
+    </td>
+    <td>
+      <span id="rating6Holder">
+      </span>
+    </td>
+    <td>
+        <span id="avgtext6">0.0</span>
+    </td>
+    <td>
+        <span id="notinttext6">0</span>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="column1">
+      Includes clear, notInterested, and toggle images.  Initially renders with grade 1 in normal mode.  Both grade and mode are read-only and cannot be changed
+    </td>
+    <td>
+      <span id="rating7Holder">
+      </span>
+    </td>
+    <td>
+        <span id="avgtext7">0.0</span>
+    </td>
+    <td>
+        <span id="notinttext7">0</span>
+    </td>
+  </tr>
+
+</table>
+
+</body>
+</html>

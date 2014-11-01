@@ -1,0 +1,78 @@
+.hidden {
+    display:none;
+}
+
+.RatingNotInterestedOnImage {
+    background-image: url(../images/rating/notInterestedOn.gif);
+}
+
+.RatingNotInterestedOffImage {
+    background-image: url(../images/rating/notInterestedOff.gif);
+}
+
+.RatingGradeAvgFullImage, .RatingGradeAvgHalfImage,
+.RatingGradeFullImage, .RatingGradeEmptyImage,
+.RatingNotInterestedOnImage,
+.RatingNotInterestedOffImage,
+.RatingClearOnImage, .RatingClearOffImage {
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 1px;
+    width: 17px;
+    height: 15px;
+    border: none;
+}
+
+.RatingGradeFullImage {
+    background-image: url(../images/rating/starFull.gif);
+}
+.RatingGradeEmptyImage {
+    background-image: url(../images/rating/starEmpty.gif);
+}
+.RatingGradeAvgFullImage {
+    background-image: url(../images/rating/avgStarFull.gif);
+}
+.RatingGradeAvgHalfImage {
+    background-image: url(../images/rating/avgStarHalf.gif);
+}
+
+.RatingModeNormalImage, .RatingModeAverageImage {
+    background-repeat: no-repeat;
+    float: left;
+    width: 30px;
+    height: 15px;
+    border: none;
+}
+
+.RatingModeNormalImage {
+    background-image: url(../images/rating/whoMe.gif);
+}
+
+.RatingModeAverageImage {
+    background-image: url(../images/rating/whoAvg.gif);
+}
+
+.RatingClearOnImage {
+    background-image: url(../images/rating/clearOn.gif);
+}
+
+.RatingClearOffImage {
+    background-image: url(../images/rating/clearOff.gif);
+}
+
+.RatingHover {
+    cursor: pointer;
+}
+.RatingTextContainer {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.RatingControlContainer {
+}
+
+.RatingSpacerNode {
+    float: left;
+    width: 10px;
+    height: 15px;
+}
