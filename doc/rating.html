@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Namespace: rating</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Namespace: rating</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        rating
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description">A star rating JQuery plugin with support for a "not interested" rating, displaying
+the user's rating or the average rating for many users, and displaying custom per-star
+text above the stars while hovering and when a grade is selected.</div>
+        
+
+        
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Key-Value pairs of properties.
+                <h6>Properties</h6>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>averageGrade</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">double</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The average grade the general user population 
+    has assigned to the item. Must be between 0 and the maximum grade. The 
+    default is 0.  The widget provides no support for maintaining the average.
+    Rather it is the client's responsibility to maintain all necessary data
+    required to compute the average and update the widget accordingly.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clearAcknowledgedText</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The acknowledged text for the clear 
+    control. There is no default.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clearHoverText</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The hover text for the clear control. There 
+    is no default.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>grade</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">int</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The grade (number of "stars") the user has assigned the 
+    item. Use the keyword "notInterested" for a not interested grade and the 
+    keyword "clear" to clear the grade (effective, set it to 0). The default is 
+    "clear".</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>gradeAcknowledgedText</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The text that is displayed after 
+    clicking on a grade component. There is no default.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>gradeHoverTexts</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The hover texts that will be used for the 
+    grade controls, ordered from lowest to highest rating.  That is, hoverTexts[0]
+    will be the hover text associated with the lowest rating; 
+    hoverTexts[hoverTexts.length-1] with the highest rating. Null can be 
+    specified as a member of the array. There are no defaults.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>gradeReadOnly</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates whether the grade of this rating 
+    component can be changed by the user. The default is false - it is NOT 
+    read-only, and therefore can be changed by the user.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>inAverageMode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates whether the component will be 
+    rendered displaying the average grade. The default is false, the component 
+    will be rendered showing the user's rating (normal mode).</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includeClear</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates whether a control to clear the 
+    user's rating should be displayed. The default is true.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includeModeToggle</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates whether a control to toggle the
+    mode (to show the average rating or the user's rating) should be rendered. 
+    The default is false.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includeNotInterested</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates whether a control to allow
+    the user to assign a "not interested" rating should be rendered. The default
+    is true.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includeText</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates whether an area for hover or 
+    post-click acknowledeged text should be rendered. The default is true.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxGrade</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">int</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The maximum grade (number of "stars") this rating 
+    instance allows. There is no default, and so must be set.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>modeReadOnly</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates whether the mode of this rating 
+    component can be changed by the user. The default is false - it is NOT 
+    read-only, and therefore can be changed by the user.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>modeToggleAcknowledgedTexts</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The acknowledged texts to be used
+    for the mode toggle control. The first element of the array is the 
+    acknowledged text displayed after clicking on the mode toggle control to 
+    preview the user's rating (normal mode).  The second element is the text 
+    displayed after clicking to preview the average rating (average mode). Null 
+    can be specified as a member of the array.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>modeToggleHoverTexts</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The hover texts to be used for the mode
+    toggle control. The first element of the array is the hover text displayed 
+    when hovering over the mode toggle control to preview the user's rating 
+    (normal mode). The second element is the text displayed when hovering to 
+    preview the average rating (normal mode). Null can be specified as a member 
+    of the array.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>notInterestedAcknowledgedText</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The acknowledged text for the
+    "not interested" control. There is no default.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>notInterestedHoverText</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The hover text for the "not 
+    interested" control. There is no default.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Client-specific object associated with the widget,
+    performs the same function as the "data" attribute does for JQuery objects.
+    The widget will not modify the object, but will return it as an argument to
+    event handlers for published events.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="rating.js.html">rating.js</a>, <a href="rating.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+<dt>
+    <h4 class="name" id="CODE_CLEAR"><span class="type-signature">(static, constant) </span>CODE_CLEAR<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        The grade value assigned to the "clear" control.
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>0</li>
+        </ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="rating.js.html">rating.js</a>, <a href="rating.js.html#line100">line 100</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="CODE_MODETOGGLE"><span class="type-signature">(static, constant) </span>CODE_MODETOGGLE<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        The grade value assigned to the "modeToggle" control.
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>-2</li>
+        </ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="rating.js.html">rating.js</a>, <a href="rating.js.html#line91">line 91</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="CODE_NOTINTERESTED"><span class="type-signature">(static, constant) </span>CODE_NOTINTERESTED<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        The grade value assigned to the "notInterested" control.
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>-1</li>
+        </ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="rating.js.html">rating.js</a>, <a href="rating.js.html#line82">line 82</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Events</h3>
+
+        <dl>
+            
+<dt>
+    
+        <h4 class="name" id="event:gradechanged">gradechanged</h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        The custom event triggered when the grade is changed.
+    </div>
+    
+
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">string</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+
+    
+
+    
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The id of the rating widget</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>grade</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The grade of the rating widget</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The client-provided payload object</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="rating.js.html">rating.js</a>, <a href="rating.js.html#line102">line 102</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        </dl>
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Index</a></h2><h3>Events</h3><ul><li><a href="rating.html#event:gradechanged">gradechanged</a></li></ul><h3>Namespaces</h3><ul><li><a href="rating.html">rating</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-dev</a> on Sat Nov 01 2014 17:13:32 GMT-0400 (EDT)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
